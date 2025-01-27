@@ -123,7 +123,6 @@ img {
         margin: 2rem 0;
         justify-content: space-between;
 
-
         .social-btn {
             box-shadow: 1px 1px lightgray;
 
@@ -133,6 +132,26 @@ img {
 
             b {
                 display: none;
+            }
+
+            a #fb-icon {
+                color: #1a77f3;
+            }
+
+            a #twit-icon {
+                color: #009eff;
+            }
+
+            a #ig-icon {
+                color: #e15589;
+            }
+
+            a #pinterest-icon {
+                color: red;
+            }
+
+            a #yt-icon {
+                color: red;
             }
         }
     }
