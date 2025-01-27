@@ -1,0 +1,26 @@
+/* COMMON-REGION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END-COMMON-REGION */
+/* DEBUG-REGION */
+
+/* END-DEBUG-REGION */
+/* UTILITIES-REGION */
+
+/* END-UTILITIES-REGION */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#logo {
+    font-family: "Nerko One", serif;
+    color: #ff9614;
+    text-shadow: lightgray 1px 0;
+    font-size: 3rem;
+    text-align: center;
+}
