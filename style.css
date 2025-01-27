@@ -39,7 +39,7 @@ img {
     width: 480px;
     max-width: 100%;
     margin: auto;
-    padding: 1rem;
+
 }
 
 .row {
@@ -67,7 +67,7 @@ img {
 
 .social-btn {
     background-color: white;
-    padding: 10px;
+    padding: 5px 10px;
     box-shadow: gray 5px;
     border-radius: 15px;
     box-shadow: gray 10px;
@@ -85,7 +85,7 @@ img {
 }
 
 #desserts {
-    h3 {
+    h4 {
         color: gray;
         font-weight: 400;
         margin-bottom: 0.5rem;
@@ -158,11 +158,11 @@ img {
 
 #presentation {
     h1 {
-        font-weight: 400;
+        font-weight: 500;
     }
 
     .rule {
-        border: 3px solid #ff9614;
+        border: 2px solid #ff9614;
         width: 15%;
         margin: 0.5rem 0 1.5rem 0;
     }
@@ -240,7 +240,7 @@ img {
         }
 
         .social-btn {
-            padding: 0.5rem 3rem;
+            padding: 0.5rem 2rem;
         }
     }
 
