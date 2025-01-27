@@ -5,25 +5,140 @@
     box-sizing: border-box;
 }
 
+:root {
+    --var-title-purple: #4e3969;
+}
+
+header {
+    padding: 5px 10px;
+}
+
+main {
+    margin-top: 2rem;
+    background-color: #f6f5f3;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* END-COMMON-REGION */
 /* DEBUG-REGION */
 
 /* END-DEBUG-REGION */
 /* UTILITIES-REGION */
-
-/* END-UTILITIES-REGION */
-header {
-    position: fixed;
-    width: 100%;
-    padding: 5px 10px;
+.main-container {
+    width: 480px;
+    max-width: 100%;
+    margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.social-btn {
+    background-color: white;
+    padding: 10px;
+    box-shadow: gray 5px;
+    border-radius: 15px;
+    box-shadow: gray 10px;
+
+}
+
+/* END-UTILITIES-REGION */
+
 #logo {
-    font-family: "Nerko One", serif;
+    font-family: "Nerko One", cursive;
     color: #ff9614;
     text-shadow: lightgray 1px 0;
     font-size: 3rem;
     text-align: center;
+}
+
+#desserts {
+    h3 {
+        color: gray;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: var(--var-title-purple);
+        margin-bottom: 1.5rem;
+
+
+        span {
+            display: none;
+        }
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    #tiramisù-img {
+        background-color: white;
+    }
+
+    #description {
+        background-color: white;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: gray 10px;
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    #social-bar {
+        margin: 2rem 0;
+        justify-content: space-between;
+
+
+        .social-btn {
+            i {
+                font-size: 1.5rem;
+            }
+
+            b {
+                display: none;
+            }
+        }
+    }
+
+    #banner {
+        display: none;
+    }
+
+
 }
 
 
