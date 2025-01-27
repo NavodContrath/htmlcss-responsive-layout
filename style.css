@@ -15,6 +15,7 @@
 header {
     position: fixed;
     width: 100%;
+    padding: 5px 10px;
 }
 
 #logo {
@@ -24,3 +25,15 @@ header {
     font-size: 3rem;
     text-align: center;
 }
+
+
+
+
+/* RESPONSIVE-REGION */
+@media screen and (min-width:768px) {
+    #logo {
+        text-align: left;
+    }
+}
+
+/* END-RESPONSIVE-REGION */
