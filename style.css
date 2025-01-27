@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
 :root {
     --var-title-purple: #4e3969;
 }
@@ -14,9 +18,12 @@ header {
 }
 
 main {
-    margin-top: 2rem;
     background-color: #f6f5f3;
-    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #7c69a4;
 }
 
 img {
@@ -32,12 +39,13 @@ img {
     width: 480px;
     max-width: 100%;
     margin: auto;
+    padding: 1rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+
 }
 
 
@@ -71,7 +79,7 @@ img {
 #logo {
     font-family: "Nerko One", cursive;
     color: #ff9614;
-    text-shadow: lightgray 1px 0;
+    text-shadow: 1px 1px lightgray;
     font-size: 3rem;
     text-align: center;
 }
@@ -100,14 +108,18 @@ img {
 
     #tiramisù-img {
         background-color: white;
+
+
     }
 
     #description {
         background-color: white;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        box-shadow: gray 10px;
+        box-shadow: 1px 1px lightgray;
         padding: 2rem;
+
+
 
         ul {
             list-style: none;
@@ -124,6 +136,8 @@ img {
 
 
         .social-btn {
+            box-shadow: 1px 1px lightgray;
+
             i {
                 font-size: 1.5rem;
             }
@@ -136,12 +150,57 @@ img {
 
     #banner {
         display: none;
+        margin-bottom: 2.5rem;
     }
 
 
 }
 
+#presentation {
+    h1 {
+        font-weight: 400;
+    }
 
+    .rule {
+        border: 3px solid #ff9614;
+        width: 15%;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    img {
+        margin: auto;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+}
+
+#foot-container {
+    padding: 1.5rem;
+    color: white;
+    font-size: small;
+    text-align: center;
+
+    p {
+        margin-top: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            color: white;
+        }
+    }
+}
 
 
 /* RESPONSIVE-REGION */
@@ -149,6 +208,130 @@ img {
     #logo {
         text-align: left;
     }
+
+    .main-container {
+        width: 720px;
+        max-width: 100%;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    #desserts {
+        h1 {
+            font-size: 2.5rem;
+
+        }
+
+        .display {
+            display: inline-block
+        }
+
+        #description {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3rem;
+            }
+        }
+
+        #banner {
+            display: block;
+            width: 100%;
+        }
+
+        .social-btn {
+            padding: 0.5rem 3rem;
+        }
+    }
+
+    #presentation {
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        span {
+            display: inline;
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .main-container {
+        width: 944px;
+        max-width: 100%;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    #desserts {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .col-lg-8 {
+            width: calc(100% / 12 * 8);
+        }
+
+        .col-lg-4 {
+            width: calc(100% / 12 * 4);
+        }
+
+        #description {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 0;
+
+            h2 {
+                padding-left: 2rem;
+                padding-top: 2rem;
+                margin: 0;
+            }
+
+            ul {
+                display: block;
+                padding: 2rem;
+            }
+
+        }
+
+        #social-bar {
+            flex-wrap: wrap;
+
+            .social-btn {
+                padding: 0.5rem 2rem;
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+
+                b {
+                    display: block;
+
+                }
+            }
+        }
+    }
+
+
+    #foot-container {
+        text-align: left;
+        padding: 1rem;
+
+        .col-lg-6 {
+            width: calc(100% / 12 * 6);
+
+        }
+
+        ul {
+            justify-content: end;
+        }
+    }
+
+
+
 }
 
 /* END-RESPONSIVE-REGION */
