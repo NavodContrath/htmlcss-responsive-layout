@@ -28,6 +28,7 @@ footer {
 
 img {
     max-width: 100%;
+    height: 100%;
 }
 
 /* END-COMMON-REGION */
@@ -39,15 +40,12 @@ img {
     width: 480px;
     max-width: 100%;
     margin: auto;
-
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-
 }
-
 
 .col-4 {
     width: calc(100% / 12 * 4);
@@ -71,7 +69,6 @@ img {
     box-shadow: gray 5px;
     border-radius: 15px;
     box-shadow: gray 10px;
-
 }
 
 /* END-UTILITIES-REGION */
@@ -106,20 +103,12 @@ img {
         margin-bottom: 2rem;
     }
 
-    #tiramisù-img {
-        background-color: white;
-
-
-    }
-
     #description {
         background-color: white;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
         box-shadow: 1px 1px lightgray;
         padding: 2rem;
-
-
 
         ul {
             list-style: none;
@@ -152,8 +141,6 @@ img {
         display: none;
         margin-bottom: 2.5rem;
     }
-
-
 }
 
 #presentation {
@@ -329,8 +316,6 @@ img {
             justify-content: end;
         }
     }
-
-
 
 }
 
