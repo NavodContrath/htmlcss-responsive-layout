@@ -24,6 +24,7 @@ main {
 
 footer {
     background-color: #7c69a4;
+    padding-bottom: 1rem;
 }
 
 img {
@@ -186,7 +187,7 @@ img {
 }
 
 #foot-container {
-    padding: 1.5rem;
+    padding: 1rem;
     color: white;
     font-size: small;
     text-align: center;
